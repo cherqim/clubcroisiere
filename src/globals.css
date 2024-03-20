@@ -16,3 +16,14 @@
     border-radius 0.3s,
     opacity 0.3s;
 }
+
+.btn-primary {
+  @apply text-white bg-accent border-0 py-[15px] px-[30px] font-p;
+}
+
+.bg-mapp {
+  background-image: url('/assets/map_bg.webp');
+  background-position: center center;
+  background-repeat: no-repeat;
+  filter: opacity(0.3);
+}
