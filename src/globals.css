@@ -75,3 +75,21 @@
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+li {
+  position: relative;
+}
+
+li:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 4px;
+  background-color: rgba(128, 128, 128, 0.305);
+  transition: width 0.3s;
+}
+
+li:hover:before {
+  width: 100%;
+}

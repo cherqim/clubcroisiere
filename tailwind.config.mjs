@@ -6,9 +6,19 @@ export default {
   theme: {
     extend: {
       animation: {
+        'draw-border': 'draw-border 0.5s ease-in-out forwards',
+        'grow-width': 'grow-width 0.5s ease-in-out infinite',
         raise: 'raise 0.5s ease-in-out infinite'
       },
       keyframes: {
+        'draw-border': {
+          '0%': { width: '0%', transform: 'translateX(-100%)' },
+          '100%': { width: '100%', transform: 'translateX(0)' }
+        },
+        'grow-width': {
+          '0%': { transform: 'scaleX(0)' },
+          '100%': { transform: 'scaleX(1)' }
+        },
         raise: {
           '0%, 100%': { transform: 'rotateX(0)' },
           '50%': { transform: 'rotateX(50px)' }
@@ -40,7 +50,8 @@ export default {
       backgroundImage: {
         hero: "url('assets/logo.jpeg')",
         map: 'url("assets/map_bg.webp")',
-        banner: 'url("assets/Croisiere-Antartica.webp")'
+        banner: 'url("assets/Croisiere-Antartica.webp")',
+        footer: 'url("assets/footer.webp")'
       }
     }
   },

@@ -1,4 +1,4 @@
-import Header from 'components/sections/Hero/Header/Header'
+import Header from 'components/sections/Header/Header'
 import { ImagesSlider } from '../../ui/slideshow'
 
 function Hero() {

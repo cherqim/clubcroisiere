@@ -4,6 +4,7 @@ import Banner from './sections/Cta/Banner'
 import Banner2 from './sections/Cta/Banner2'
 import Banner3 from './sections/Cta/Banner3'
 import Features from './sections/Features/Features'
+import Footer from './sections/Footer/Footer'
 import Hero from './sections/Hero/Hero'
 import Services from './sections/Services/Services'
 import Voyages from './sections/Voyages/Voyages'
@@ -20,6 +21,7 @@ function App() {
       <Banner3 />
       <Continents />
       <Avis />
+      <Footer />
     </div>
   )
 }
