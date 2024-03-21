@@ -1,3 +1,4 @@
+import Avis from './sections/Avis/Avis'
 import Continents from './sections/Continents/Continents'
 import Banner from './sections/Cta/Banner'
 import Banner2 from './sections/Cta/Banner2'
@@ -18,6 +19,7 @@ function App() {
       <Services />
       <Banner3 />
       <Continents />
+      <Avis />
     </div>
   )
 }
