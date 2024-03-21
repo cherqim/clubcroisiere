@@ -3,7 +3,7 @@ import { Headset, Move, Tags } from 'lucide-react'
 
 const Services = () => {
   return (
-    <section className="mx-20 flex w-full max-w-7xl">
+    <section className=" m-20 flex w-full max-w-7xl">
       <div className="w-1/2 shadow-[-15px_15px_0_0_#005cd4]">
         <img
           src={girl}

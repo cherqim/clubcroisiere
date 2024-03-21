@@ -27,3 +27,40 @@
   background-repeat: no-repeat;
   filter: opacity(0.3);
 }
+
+.bg-asia {
+  background-image: url('assets/bali.webp');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bg-namerica {
+  background-image: url('assets/namerica.webp');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bg-samerica {
+  background-image: url('assets/samerica.webp');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bg-africa {
+  background-image: url('assets/afrique.webp');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bg-europe {
+  background-image: url('assets/euro.webp');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bg-oceania {
+  background-image: url('assets/ocean.webp');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
