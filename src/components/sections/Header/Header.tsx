@@ -15,7 +15,7 @@ const Header = () => {
           <img src={logo} alt="logo" className="size-20" />
         </div>
         {/* Nav */}
-        <div className="hidden h-full w-1/3 md:visible">
+        <div className="hidden h-full w-1/3 md:block">
           <ul className="flex  h-full flex-row items-center justify-evenly tracking-[2px]">
             <li className="flex h-full items-center justify-center transition-all duration-500 ease-in-out hover:before:w-full">
               <span className="before:absolute before:inset-x-0 before:top-0 before:h-[4px] before:bg-transparent before:transition-all before:duration-500 before:ease-in-out">
@@ -27,7 +27,7 @@ const Header = () => {
           </ul>
         </div>
         {/* Mobile Nav */}
-        <div>
+        <div className="md:hidden">
           <AlignJustify onClick={toggleMenu} />
         </div>
         {/* Social */}
