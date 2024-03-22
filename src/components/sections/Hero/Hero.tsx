@@ -1,12 +1,12 @@
 import Header from 'components/sections/Header/Header'
 import { ImagesSlider } from '../../ui/slideshow'
 
+const images = [
+  '/assets/croi3.webp',
+  '/assets/croi2.webp',
+  '/assets/croi1.jpeg'
+]
 function Hero() {
-  const images = [
-    '/assets/croi3.webp',
-    '/assets/croi2.webp',
-    '/assets/croi1.jpeg'
-  ]
   return (
     <section className="">
       <ImagesSlider images={images} overlay overlayClassName="bg-overlay">

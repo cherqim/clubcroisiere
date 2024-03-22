@@ -103,6 +103,7 @@ export const ImagesSlider = ({
           <motion.img
             key={currentIndex}
             src={loadedImages[currentIndex]}
+            alt="Slideshow Hero"
             initial={{ opacity: 0, scale: 1 }}
             animate={{ opacity: 1, scale: 1.2 }}
             exit={{ opacity: 0 }}
