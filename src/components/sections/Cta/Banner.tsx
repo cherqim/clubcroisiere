@@ -28,7 +28,7 @@ const Banner = () => {
       <motion.div
         initial={{ opacity: 0, translateX: 200 }}
         animate={{ opacity: 1, translateX: 0 }}
-        transition={{ duration: 1, ease: 'easeInOut' }}
+        transition={{ duration: 1, ease: 'easeInOu' }}
         className="flex flex-col items-center justify-center md:w-1/2"
       >
         <img
