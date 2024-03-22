@@ -30,15 +30,17 @@ const voyages = [
 
 const Voyages = () => {
   return (
-    <div className="flex h-screen w-full flex-col items-center justify-center gap-5">
-      <h3 className="font-p uppercase text-accent">Voyages Planifiés</h3>
-      <h1 className="font-heading text-[48px] font-bold text-secondary">
+    <div className="flex  w-full flex-col items-center justify-center gap-5 ">
+      <h3 className="px-6 font-p text-[14px] uppercase text-accent md:text-[16px]">
+        Voyages Planifiés
+      </h3>
+      <h1 className="px-6 text-center font-heading text-[24px] font-bold text-secondary md:text-[48px]">
         Prochaines Escales : Aventures en Vue
       </h1>
-      <h4 className="font-p text-primary">
+      <h4 className="px-6 font-p text-[14px] text-primary md:text-[16px]">
         Découvrez Nos Futures Destinations de Rêve
       </h4>
-      <div className="grid w-full max-w-7xl grid-cols-3">
+      <div className="grid w-full max-w-7xl grid-cols-1 md:grid-cols-3">
         {voyages.map((voy, i) => (
           <Cards key={i} {...voy} />
         ))}
@@ -65,17 +67,17 @@ const Cards = ({
   return (
     <div className="m-3 flex flex-col items-start justify-center gap-4 p-4 shadow-[0_0_30px_0_rgba(0,0,0,.1)]">
       <img src={img} alt="msc vertuosa" />
-      <h4 className="font-p text-[12px] uppercase leading-[24px] tracking-[2px] text-accent">
+      <h4 className="font-p text-[10px] uppercase leading-[24px] tracking-[2px] text-accent md:text-[12px]">
         {date}
       </h4>
-      <h2 className="font-heading text-[24px] font-bold text-secondary">
+      <h2 className="font-heading text-[18px] font-bold text-secondary md:text-[24px]">
         {name}
       </h2>
       <hr className="w-full bg-gray-400" />
-      <p className="font-p text-[14px] text-primary">
+      <p className="font-p text-[12px] text-primary md:text-[14px]">
         <span className="font-semibold underline">Itinéraire</span>: {itin}
       </p>
-      <p className="font-p text-[14px] text-primary">{desc}</p>
+      <p className="font-p text-[12px] text-primary md:text-[14px]">{desc}</p>
       <button className="btn-primary">{btn}</button>
     </div>
   )

@@ -3,57 +3,59 @@ import { Headset, Move, Tags } from 'lucide-react'
 
 const Services = () => {
   return (
-    <section className=" m-20 flex w-full max-w-7xl">
-      <div className="w-1/2 shadow-[-15px_15px_0_0_#005cd4]">
+    <section className=" flex w-full max-w-7xl flex-col md:m-20 md:flex-row">
+      <div className="shadow-[-15px_15px_0_0_#005cd4] md:w-1/2">
         <img
           src={girl}
-          className="h-[740px] object-cover object-[center_right]"
+          className="w-full object-cover object-[center_right] md:h-[740px]"
         />
       </div>
-      <div className="flex flex-col items-start justify-start gap-5 p-16">
-        <h2 className="font-heading text-[48px] font-bold text-secondary">
+      <div className="flex flex-col items-start justify-start gap-5 p-5 md:p-16">
+        <h2 className="w-full text-center font-heading text-[28px] font-bold text-secondary md:text-left md:text-[48px]">
           Services Personnalisés
         </h2>
-        <div className="mb-[35px] flex gap-4">
+        <div className="mb-[35px] flex flex-col items-center justify-center gap-4 md:flex-row md:items-start md:justify-start">
           <div className="flex size-[56px] items-center justify-center rounded-full bg-[#c8dcf6] text-accent">
             <Headset strokeWidth={2} size={32} />
           </div>
-          <div className="flex flex-col">
-            <h3 className="font-heading text-[24px] font-bold text-secondary">
+          <div className="flex flex-col items-center justify-center md:items-start md:justify-start">
+            <h3 className="text-center font-heading text-[24px] font-bold text-secondary">
               Assistance Clientèle
             </h3>
-            <p className="font-p font-light text-primary">
+            <p className="text-center font-p font-light text-primary md:text-left">
               Nous sommes à votre service pour un voyage parfait.
             </p>
           </div>
         </div>
-        <div className="mb-[35px] flex gap-4">
+        <div className="mb-[35px] flex w-full flex-col items-center justify-center gap-4 md:flex-row md:items-start md:justify-start">
           <div className="flex size-[56px] items-center justify-center rounded-full bg-[#c8dcf6] text-accent">
             <Move strokeWidth={2} size={32} />
           </div>
-          <div className="flex flex-col">
+          <div className="flex flex-col items-center justify-center md:items-start md:justify-start">
             <h3 className="font-heading text-[24px] font-bold text-secondary">
               Options Flexibles
             </h3>
-            <p className="font-p font-light text-primary">
+            <p className="text-center font-p font-light text-primary md:text-left">
               Des itinéraires sur mesure selon vos désirs.
             </p>
           </div>
         </div>
-        <div className="mb-[35px] flex gap-4">
+        <div className="mb-[35px] flex flex-col items-center justify-center gap-4 md:flex-row md:items-start md:justify-start">
           <div className="flex size-[56px] items-center justify-center rounded-full bg-[#c8dcf6] text-accent">
             <Tags strokeWidth={2} size={32} />
           </div>
-          <div className="flex flex-col">
+          <div className="flex flex-col items-center justify-center md:items-start md:justify-start">
             <h3 className="font-heading text-[24px] font-bold text-secondary">
               Offres Spéciales
             </h3>
-            <p className="font-p font-light text-primary">
+            <p className="text-center font-p font-light text-primary md:text-left">
               Des promotions et des tarifs avantageux régulièrement mis à jour.
             </p>
           </div>
         </div>
-        <button className="btn-primary">Réservez Maintenant</button>
+        <button className="btn-primary self-center md:self-start">
+          Réservez Maintenant
+        </button>
       </div>
     </section>
   )

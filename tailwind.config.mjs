@@ -44,7 +44,7 @@ export default {
         accent: '#005cd4'
       },
       fontFamily: {
-        heading: ['Orpheus Pro', 'sans-serif'],
+        heading: ['Enriqueta', 'sans-serif'],
         p: ['Manrope', 'sans-serif']
       },
       backgroundImage: {

@@ -69,18 +69,18 @@ const getAnimationSettings = (isFlipped: boolean) => ({
 
 const Continents = () => {
   return (
-    <div className="mt-20 flex  w-full flex-col items-center justify-center gap-5">
-      <h3 className=" font-p uppercase text-accent">
+    <div className="mt-20 flex  w-full flex-col items-center justify-center gap-5 text-center md:text-left ">
+      <h3 className=" font-p text-[14px] uppercase text-accent md:text-[16px]">
         EXPLOREZ LE MONDE, UNE CROISIÈRE À LA FOIS
       </h3>
-      <h1 className="font-heading text-[48px] font-bold text-secondary">
+      <h1 className="font-heading text-[28px] font-bold text-secondary md:text-[48px]">
         Voyages au Cœur des Continents
       </h1>
-      <h4 className="font-p text-primary">
+      <h4 className="font-p text-[14px] text-primary md:text-[16px]">
         Chez Club Croisière, nous croyons que chaque région du monde a son
         propre charme et mystère
       </h4>
-      <div className="grid h-auto w-full max-w-7xl grid-cols-3">
+      <div className="grid h-auto w-full max-w-7xl grid-cols-1 md:grid-cols-3">
         {voyages.map((voy, i) => (
           <Cards
             key={i}

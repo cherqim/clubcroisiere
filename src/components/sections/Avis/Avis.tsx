@@ -2,25 +2,25 @@ import avis from 'assets/avis.webp'
 
 const Avis = () => {
   return (
-    <div className="relative mx-20 mt-20 flex size-full max-w-7xl items-center justify-center">
-      <div className=" w-1/3">
+    <div className="relative mt-20 flex size-full max-w-7xl flex-col items-center justify-center md:mx-20 md:flex-row">
+      <div className="w-full md:w-1/3">
         <img
           src={avis}
           alt={avis}
-          className="h-[775px] w-full max-w-[35vw] object-cover align-middle"
+          className="h-[200px] w-full object-cover px-5 align-middle md:h-[775px] md:max-w-[35vw] md:px-0"
           style={{ objectPosition: 'center center' }}
         />
       </div>
-      <div className="my-16 -ml-10 flex w-2/3 flex-col gap-10 bg-white p-20">
+      <div className="flex w-full flex-col gap-10 bg-white text-center md:my-16 md:-ml-10 md:w-2/3 md:p-20 md:text-left">
         <div className="flex flex-col">
-          <h2 className="font-heading text-[48px] font-bold text-secondary">
+          <h2 className="mt-5 font-heading text-[28px] font-bold text-secondary md:text-[48px]">
             Ce que nos clients disent
           </h2>
           <p className="font-p text-[16px] font-semibold text-primary">
             Vos Expériences, Nos Engagements
           </p>
         </div>
-        <div className="scrollbar-hide flex w-full flex-row gap-5  overflow-x-scroll  hover:cursor-grab">
+        <div className="scrollbar-hide flex w-full flex-row gap-5  overflow-x-scroll  p-5 hover:cursor-grab">
           <div className="flex w-[400px]  shrink-0 flex-col items-center justify-center bg-gray-100 p-8">
             <p className="text-center font-p font-light text-primary">
               J&apos;ai été éblouie par la qualité du service client de Club
