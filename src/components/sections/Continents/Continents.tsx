@@ -149,7 +149,7 @@ const Cards = ({
             <motion.img
               {...getAnimationSettings(isFlipped)}
               src={img}
-              alt="msc vertuosa"
+              alt={name}
             />
             <motion.h2
               {...getAnimationSettings(isFlipped)}
@@ -203,6 +203,7 @@ const BackCard = ({
         {backContent}
       </motion.p>
       <motion.button
+        aria-label="Contactez nous"
         {...getAnimationSettings(isFlipped)}
         className="btn-primary relative z-[1]"
       >

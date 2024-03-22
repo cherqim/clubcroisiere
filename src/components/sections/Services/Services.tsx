@@ -13,6 +13,7 @@ const Services = () => {
       >
         <img
           src={girl}
+          alt="Girl Climbing"
           className="w-full object-cover object-[center_right] md:h-[740px]"
         />
       </motion.div>
@@ -79,7 +80,10 @@ const Services = () => {
             </p>
           </div>
         </motion.div>
-        <button className="btn-primary self-center md:self-start">
+        <button
+          aria-label="Réserver Maintenant"
+          className="btn-primary self-center md:self-start"
+        >
           Réservez Maintenant
         </button>
       </div>

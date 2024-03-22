@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 
 const Avis = () => {
   return (
-    <div className="relative mt-20 flex size-full max-w-7xl flex-col items-center justify-center md:mx-20 md:flex-row">
+    <section className="relative mt-20 flex size-full max-w-7xl flex-col items-center justify-center md:mx-20 md:flex-row">
       <div className="w-full md:w-1/3">
         <motion.img
           initial={{ rotate: '90deg' }}
@@ -71,7 +71,7 @@ const Avis = () => {
           </div>
         </div>
       </motion.div>
-    </div>
+    </section>
   )
 }
 

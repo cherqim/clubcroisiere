@@ -10,7 +10,10 @@ const Banner3 = () => {
           Découvrez nos offres et commencez à planifier votre prochaine aventure
           en mer.
         </p>
-        <button className="btn-primary mt-5 w-fit self-center md:self-start">
+        <button
+          aria-label="Réservez votre place maintenant"
+          className="btn-primary mt-5 w-fit self-center md:self-start"
+        >
           Réservez votre place maintenant
         </button>
       </div>

@@ -2,7 +2,7 @@ import logo from 'assets/logo_blue.webp'
 import { Mail } from 'lucide-react'
 const Footer = () => {
   return (
-    <div
+    <footer
       className="relative mt-20 flex w-full flex-col items-center justify-center bg-footer bg-cover bg-no-repeat px-20 md:h-80 md:flex-row md:flex-wrap"
       style={{ backgroundPosition: 'bottom center' }}
     >
@@ -18,7 +18,9 @@ const Footer = () => {
           d&apos;information et des surprises exclusives.
         </p>
         <div className="mt-5 flex flex-col md:w-3/4 md:flex-row">
+          <label htmlFor="email" className="hidden"></label>
           <input
+            name="email"
             type="email"
             placeholder="Email"
             className="h-12 border-none px-5 md:w-8/12"
@@ -29,7 +31,7 @@ const Footer = () => {
         </div>
       </div>
       <hr className="w-3/4 " />
-    </div>
+    </footer>
   )
 }
 

@@ -31,7 +31,7 @@ const voyages = [
 
 const Voyages = () => {
   return (
-    <motion.div
+    <motion.section
       initial={{ opacity: 0, translateY: 200 }}
       animate={{ opacity: 1, translateY: 0 }}
       transition={{ duration: 1, ease: 'easeInOut' }}
@@ -51,7 +51,7 @@ const Voyages = () => {
           <Cards key={i} {...voy} />
         ))}
       </div>
-    </motion.div>
+    </motion.section>
   )
 }
 
@@ -72,7 +72,7 @@ const Cards = ({
 }) => {
   return (
     <div className="m-3 flex flex-col items-start justify-center gap-4 p-4 shadow-[0_0_30px_0_rgba(0,0,0,.1)]">
-      <img src={img} alt="msc vertuosa" />
+      <img src={img} alt={name} />
       <h4 className="font-p text-[10px] uppercase leading-[24px] tracking-[2px] text-accent md:text-[12px]">
         {date}
       </h4>
@@ -84,7 +84,9 @@ const Cards = ({
         <span className="font-semibold underline">Itinéraire</span>: {itin}
       </p>
       <p className="font-p text-[12px] text-primary md:text-[14px]">{desc}</p>
-      <button className="btn-primary">{btn}</button>
+      <button className="btn-primary" aria-label={`Book ${name}`}>
+        {btn}
+      </button>
     </div>
   )
 }

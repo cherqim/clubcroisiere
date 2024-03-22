@@ -19,7 +19,12 @@ const Banner2 = () => {
           pour des événements d’entreprise, nos voyages sont conçus pour
           répondre à toutes vos envies.
         </p>
-        <button className="btn-primary">Réservez votre place maintenant</button>
+        <button
+          className="btn-primary"
+          aria-label="Reservez votre place maintenant"
+        >
+          Réservez votre place maintenant
+        </button>
       </motion.div>
     </section>
   )
