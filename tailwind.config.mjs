@@ -50,8 +50,8 @@ export default {
       backgroundImage: {
         hero: "url('assets/logo.jpeg')",
         map: 'url("assets/map_bg.webp")',
-        banner: 'url("assets/Croisiere-Antartica.webp")',
-        footer: 'url("assets/footer.webp")'
+        banner: 'url("/assets/Croisiere-Antartica.webp")',
+        footer: 'url("/assets/footer.webp")'
       }
     }
   },
