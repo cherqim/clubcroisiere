@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 
 const Banner = () => {
   return (
-    <section className="relative inset-0 mt-20 flex  w-full max-w-7xl flex-col items-center justify-center md:mx-20 md:h-[450px] md:flex-row">
+    <header className="relative inset-0 mt-20 flex  w-full max-w-7xl flex-col items-center justify-center md:mx-20 md:h-[450px] md:flex-row">
       <div className="bg-mapp absolute inset-0 -z-10"></div>
       <motion.div
         initial={{ opacity: 0, translateX: -200 }}
@@ -23,7 +23,9 @@ const Banner = () => {
           Chaque voyage est une promesse d’expériences inoubliables, conçu avec
           soin pour satisfaire tous vos désirs.
         </p>
-        <button className="btn-primary">Réservez votre place maintenant</button>
+        <button className="btn-primary" aria-label="Reserve your spot now">
+          Réservez votre place maintenant
+        </button>
       </motion.div>
       <motion.div
         initial={{ opacity: 0, translateX: 200 }}
@@ -33,11 +35,11 @@ const Banner = () => {
       >
         <img
           src={bateau}
-          alt="bateau"
+          alt="A boat on the sea"
           className="w-screen align-middle md:max-w-[51vw]"
         />
       </motion.div>
-    </section>
+    </header>
   )
 }
 
