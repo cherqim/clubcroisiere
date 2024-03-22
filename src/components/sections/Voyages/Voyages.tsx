@@ -1,6 +1,7 @@
 import vertuosa from 'assets/msc-vertuosa.webp'
 import yacht from 'assets/yacht.webp'
 import aerial from 'assets/aerial.webp'
+import { motion } from 'framer-motion'
 const voyages = [
   {
     name: 'Msc Virtuosa',
@@ -30,7 +31,12 @@ const voyages = [
 
 const Voyages = () => {
   return (
-    <div className="flex  w-full flex-col items-center justify-center gap-5 ">
+    <motion.div
+      initial={{ opacity: 0, translateY: 200 }}
+      animate={{ opacity: 1, translateY: 0 }}
+      transition={{ duration: 1, ease: 'easeInOut' }}
+      className="flex  w-full flex-col items-center justify-center gap-5 "
+    >
       <h3 className="px-6 font-p text-[14px] uppercase text-accent md:text-[16px]">
         Voyages Planifiés
       </h3>
@@ -45,7 +51,7 @@ const Voyages = () => {
           <Cards key={i} {...voy} />
         ))}
       </div>
-    </div>
+    </motion.div>
   )
 }
 

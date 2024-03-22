@@ -1,10 +1,16 @@
 import bateau from 'assets/bateau.webp'
+import { motion } from 'framer-motion'
 
 const Banner = () => {
   return (
     <section className="relative inset-0 mt-20 flex  w-full max-w-7xl flex-col items-center justify-center md:mx-20 md:h-[450px] md:flex-row">
       <div className="bg-mapp absolute inset-0 -z-10"></div>
-      <div className="flex flex-col items-start justify-center gap-5 p-10 md:w-1/2">
+      <motion.div
+        initial={{ opacity: 0, translateX: -200 }}
+        animate={{ opacity: 1, translateX: 0 }}
+        transition={{ duration: 1, ease: 'easeInOut' }}
+        className="flex flex-col items-start justify-center gap-5 p-10 md:w-1/2"
+      >
         <h2 className="font-heading text-[28px] font-semibold leading-none text-secondary md:text-[48px]">
           Pourquoi Choisir Club Croisière ?
         </h2>
@@ -18,14 +24,19 @@ const Banner = () => {
           soin pour satisfaire tous vos désirs.
         </p>
         <button className="btn-primary">Réservez votre place maintenant</button>
-      </div>
-      <div className="flex flex-col items-center justify-center md:w-1/2">
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, translateX: 200 }}
+        animate={{ opacity: 1, translateX: 0 }}
+        transition={{ duration: 1, ease: 'easeInOut' }}
+        className="flex flex-col items-center justify-center md:w-1/2"
+      >
         <img
           src={bateau}
           alt="bateau"
           className="w-screen align-middle md:max-w-[51vw]"
         />
-      </div>
+      </motion.div>
     </section>
   )
 }
